@@ -33,7 +33,7 @@ export default defineConfig({
     host: true
   },
   define: {
-    'process.env.API_BASE': JSON.stringify('https://marcosantoniocunha.com.br/wp-json/pericia-trabalhista-pro/v1'),
-    'process.env.WP_BASE': JSON.stringify('https://marcosantoniocunha.com.br')
+    'process.env.API_BASE': JSON.stringify('https://marcosantoniocunhasa1771856246033.0772036.meusitehostgator.com.br/wp-json/pericia-trabalhista-pro/v1'),
+    'process.env.WP_BASE': JSON.stringify('https://marcosantoniocunhasa1771856246033.0772036.meusitehostgator.com.br')
   }
 })
