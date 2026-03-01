@@ -1,0 +1,5 @@
+{
+  "name": "Perícia Trabalhista Pro",
+  "description": "Sistema completo para gestão de laudos periciais trabalhistas com visual ouro velho e ferramentas de IA.",
+  "requestFramePermissions": ["microphone", "camera"]
+}

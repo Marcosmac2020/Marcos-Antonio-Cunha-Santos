@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "pericia-trabalhista-pro",
+  "builds": [
+    {
+      "src": "dist/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/$1"
+    }
+  ],
+  "env": {
+    "API_BASE": "https://marcosantoniocunha.com.br/wp-json/pericia-trabalhista-pro/v1",
+    "WP_BASE": "https://marcosantoniocunha.com.br"
+  }
+}

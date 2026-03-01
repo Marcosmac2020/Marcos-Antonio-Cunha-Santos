@@ -1,0 +1,291 @@
+/**
+ * Perícia Trabalhista Pro - Admin Styles
+ */
+
+.ptp-admin-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ptp-dashboard-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.ptp-dashboard-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.ptp-dashboard-header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 1.1em;
+}
+
+.ptp-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ptp-stat-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #667eea;
+}
+
+.ptp-stat-card.processos {
+    border-left-color: #3498db;
+}
+
+.ptp-stat-card.laudos {
+    border-left-color: #2ecc71;
+}
+
+.ptp-stat-card.pendentes {
+    border-left-color: #f39c12;
+}
+
+.ptp-stat-card.concluidos {
+    border-left-color: #9b59b6;
+}
+
+.ptp-stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0 0 5px 0;
+}
+
+.ptp-stat-label {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ptp-recent-activity {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ptp-recent-activity h2 {
+    margin: 0 0 20px 0;
+    color: #2c3e50;
+}
+
+.ptp-activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ptp-activity-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #ecf0f1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ptp-activity-item:last-child {
+    border-bottom: none;
+}
+
+.ptp-activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ptp-activity-icon.processo {
+    background: #3498db;
+    color: white;
+}
+
+.ptp-activity-icon.laudo {
+    background: #2ecc71;
+    color: white;
+}
+
+.ptp-activity-icon.prazo {
+    background: #f39c12;
+    color: white;
+}
+
+.ptp-activity-content {
+    flex: 1;
+}
+
+.ptp-activity-title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0 0 5px 0;
+}
+
+.ptp-activity-time {
+    color: #7f8c8d;
+    font-size: 0.85em;
+}
+
+.ptp-form-wrapper {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ptp-form-group {
+    margin-bottom: 20px;
+}
+
+.ptp-form-label {
+    display: block;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.ptp-form-input,
+.ptp-form-select,
+.ptp-form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.ptp-form-input:focus,
+.ptp-form-select:focus,
+.ptp-form-textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.ptp-form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.ptp-form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.ptp-button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ptp-button:hover {
+    background: #5a6fd8;
+}
+
+.ptp-button.secondary {
+    background: #95a5a6;
+}
+
+.ptp-button.secondary:hover {
+    background: #7f8c8d;
+}
+
+.ptp-settings-section {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.ptp-settings-section h2 {
+    margin: 0 0 20px 0;
+    color: #2c3e50;
+}
+
+.ptp-settings-description {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.ptp-notice {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.ptp-notice.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.ptp-notice.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.ptp-notice.warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.ptp-notice.info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+@media (max-width: 768px) {
+    .ptp-admin-wrapper {
+        padding: 10px;
+    }
+    
+    .ptp-dashboard-header {
+        padding: 20px;
+    }
+    
+    .ptp-dashboard-header h1 {
+        font-size: 2em;
+    }
+    
+    .ptp-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ptp-form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .ptp-activity-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
